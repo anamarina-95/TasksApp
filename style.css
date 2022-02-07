@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    -225deg,
+    #ffff00,
+    #ffd700 38%,
+    #eee8aa 100%
+  );
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.banner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: 90%;
+  animation: fadebackground 3s infinite;
+  border-radius: 20px;
+  /* visibility: hidden; */
+}
+
+@keyframes fadebackground {
+  from {
+    background-color: linear-gradient(
+      -225deg,
+      #ffff00,
+      #ffd700 38%,
+      #eee8aa 100%
+    );
+  }
+  to {
+    background-color: #f6f897;
+  }
+}
+
+.banner div {
+  margin-top: 10%;
+  color: black;
+}
+
+.banner button {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  outline: none;
+}
+
+.banner button:hover {
+  background-color: rgb(255, 252, 89);
+}
+
+.banner button:active {
+  background-color: rgb(255, 252, 89);
+}
+
+.textcontent {
+  text-align: justify;
+}
+
+.arrangebuttons {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: grid;
+  place-items: top; */
+}
+
+.arrangebuttons button {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  outline: none;
+}
+
+.arrangebuttons button:hover {
+  background-color: rgb(255, 252, 89);
+}
+
+.arrangebuttons button:active {
+  background-color: rgb(255, 252, 89);
+}
+
+#hiddendiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 180px;
+  width: 100%;
+}
+
+.div-data-container {
+  width: 400px;
+  height: 150px;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  float: left;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  margin: 20px 20px 20px 20px;
+}
+
+.imagecontainer {
+  justify-content: flex-end;
+  width: 100%;
+  text-align: right;
+  float: right;
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px;
+}
+
+.imagecontainer button {
+  float: right;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.imagecontainer button:hover {
+  background-color: rgb(255, 252, 89);
+}
+
+.imagecontainer button:active {
+  background-color: rgb(255, 252, 89);
+}
+
+.imagecontainer img {
+  width: 30px;
+  height: 30px;
+  object-fit: scale-down;
+}
+
+button.savedata {
+  float: left;
+  justify-content: left;
+}
+
+.savedata img {
+  width: 50px;
+  height: 30px;
+  object-fit: scale-down;
+}
+
+.addtext {
+  display: block;
+  color: black;
+  font-family: cursive;
+  text-align: justify;
+  width: 400px;
+  font-size: 20px;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+  border: none;
+  height: 100px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+textarea::-webkit-scrollbar-track {
+  box-shadow: transparent;
+  -webkit-box-shadow: inset 0 0 6px rgb(255, 252, 89);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 252, 89);
+  outline: 1px solid rgb(255, 252, 89);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .div-data-container {
+    width: 300px;
+    margin: 30px 30px 30px 30px;
+  }
+  .arrangebuttons {
+    margin-top: 10px;
+  }
+
+  .arrangebuttons button {
+    font-size: 8px;
+  }
+
+  .hiddendiv {
+    width: 60%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .arrangebuttons {
+    margin-top: 10px;
+  }
+
+  .arrangebuttons button {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .arrangebuttons {
+    margin-top: 10px;
+  }
+
+  .arrangebuttons button {
+    font-size: 12px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .arrangebuttons {
+    margin-top: 10px;
+  }
+
+  .arrangebuttons button {
+    font-size: 12px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .arrangebuttons {
+    margin-top: 10px;
+  }
+
+  .arrangebuttons button {
+    font-size: 12px;
+  }
+}

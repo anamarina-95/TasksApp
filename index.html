@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Welcome to your tasks app</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="banner" w3-animate-opacity>
+        <div>
+            <h1>WELCOME!<br><br></h1>
+            <h2>Instructions:<br></h2>
+            <div class="textcontent">
+                <h3>- Use the <font color="#636358">Add New Task</font> button to add tasks on the page;<br>
+                    - Use the <font color="#65da41">GREEN CHECK</font> button to mark your task as completed;<br>
+                    - Use the <font color="red">X</font> button to deleted the task from the task list;<br>
+                    - Use the <font color="gray">SAVE </font> button to keep your tasks list after you exist or re-load
+                    the page.<br>
+                    - Use the <font color="#636358">Clear Task List</font> button to delete all the tasks existent on
+                    the page.<br><br>
+                </h3>
+            </div>
+            <h3>Press SKIP to beggin.<br><br><br><br></h3>
+            <button class="bannerbutton">SKIP</button>
+        </div>
+    </div>
+
+    <div class="arrangebuttons">
+        <button class="changespace" style="display: none;">Add new task</button>
+        <button class="deletetasks" style="display: none;">Clear task list</button>
+    </div>
+
+    <div id="hiddendiv"></div>
+
+    <script src='app1.js'></script>
+
+
+
+</body>
+
+</html>
